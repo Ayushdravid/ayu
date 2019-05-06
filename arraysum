@@ -1,0 +1,43 @@
+#include<stdio.h>
+void input(int n,int a[]);
+int compute(int n,int a[]);
+void output(int sum);
+int main()
+{
+      int a[100],sum,n;
+      printf("enter the size of the array \n");
+      scanf("%d",&n);
+      input(n,a);
+      sum=compute(n,a);
+      output(sum);
+}
+void input(int n,int a[n])
+{
+   int i;
+   printf("enter the elements of array\n");
+   for(i=0;i<n;i++)
+   {
+            scanf("%d",&a[i]);
+
+    }
+}
+int compute(int n,int a[n])
+{
+   int sum=0,i;
+   for(i=0;i<n;i++)
+   {
+        sum=sum+a[i];
+   }
+    return sum;
+}
+void output(int sum)
+{
+   printf("the sum of the array is %d",sum);
+}
+
+
+
+
+
+
+
